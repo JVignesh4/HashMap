@@ -11,6 +11,7 @@ public class MyHashMap<K, V> {
         this.hashLinkedList = new LinkList<K, V>();
     }
 
+
     public V get(K key) {
         Node<K, V> myMapNode = (Node<K, V>) this.hashLinkedList.search(key);
         return (myMapNode == null) ? null : myMapNode.getValue();
